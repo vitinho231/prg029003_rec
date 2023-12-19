@@ -7,10 +7,13 @@
 #include <stdlib.h>
 #include <string.h>
 
+
+
 typedef struct {
     char *cpf;
     char *nome;
     char *email;
+
 } pessoa_t;
 
 typedef struct no {
@@ -23,6 +26,8 @@ typedef struct dicionario {
     int tamanho; // tamanho do vetor
     no_t **vetor;
 } dicionario_t;
+
+
 
 dicionario_t *criar_dicionario(int m);
 void destruir_pessoa(pessoa_t *pessoa);

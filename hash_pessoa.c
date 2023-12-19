@@ -50,7 +50,7 @@ int hash(const char *chave, int m) {
     for (int i = 0; chave[i] != '\0'; i++) {
         soma += (i + 1) * chave[i];
     }
-    return soma  m;
+    return soma;  m;
 }
 
 bool inserir(dicionario_t *d, char *chave, pessoa_t *valor) {
@@ -66,6 +66,7 @@ bool inserir(dicionario_t *d, char *chave, pessoa_t *valor) {
     }
     no->valor = valor;
 
+    int indce;
     d->vetor[indce] = no;
 
     return true;
